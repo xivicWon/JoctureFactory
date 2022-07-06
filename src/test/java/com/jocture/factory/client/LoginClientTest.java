@@ -19,7 +19,13 @@ class LoginClientTest {
     void login(LoginType loginType){
 
         loginClient.login(loginType);
+    }
 
+    @ParameterizedTest
+    @EnumSource
+    void login2(LoginType loginType){
+
+        loginClient.login(loginType);
     }
 
 

@@ -32,7 +32,6 @@ public class LoginServiceFactoryV1 implements LoginServiceFactory {
                 return mobileLoginService;
             case GOOGLE:
                 return googleLoginService;
-
             default:
                 throw new NoSuchElementException("Cannot found LoginService of " + loginType);
         }
